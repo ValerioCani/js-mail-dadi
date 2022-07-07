@@ -29,14 +29,11 @@ const mailInput = prompt('digita il tuo indirizzo E-Mail');
 
 for(let i=0 ; i<invitati && mailInput!==listaEmail[i-1]; i++){
     if( mailInput==listaEmail[i]){
-
         alert('lei compare tra gli invitati');
-
-    }else {
-        
-        alert('lei non compare tra gli invitati');
-
-    }
+    } else if(i=invitati-1){
+        alert('lei non compare tra gli invitati')
+    } else {}
+    console.log(i);
 }//qui fa i++
 
 
